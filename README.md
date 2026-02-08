@@ -1,7 +1,6 @@
 # Hi There! 👋
 
 ## I am Maicon Mattos
-**Backend Java Junior Developer**
 
 ---
 
