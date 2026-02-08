@@ -1,28 +1,30 @@
 name: Generate GitHub Stats
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * 1"
-  workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate top languages
-        uses: anuraghazra/github-readme-stats@master
-        with:
-          username: mattosmaicon
-          theme: radical
-          layout: compact
-          output: assets/top-langs.svg
+      - name: Create assets folder
+        run: mkdir -p assets
+
+      - name: Download top languages SVG
+        run: |
+          curl -L \
+          "https://github-readme-stats.vercel.app/api/top-langs/?username=mattosmaicon&layout=compact&theme=radical" \
+          -o assets/top-langs.svg
 
       - name: Commit files
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add assets/top-langs.svg
-          git commit -m "update github stats" || exit 0
+          git commit -m "update top languages stats" || exit 0
           git push
