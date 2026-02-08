@@ -16,4 +16,5 @@
 
 ## 📊 Most Used Languages
 
-![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=mattosmaicon&layout=compact&theme=radical)
+![Top Langs](assets/top-langs.svg)
+
