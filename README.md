@@ -12,9 +12,10 @@
   <h2>My name is Maicon Mattos</h2>
   <h3>(Backend Developer | Java | Spring Framework)</h3>
   
-  <div>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mattosmaicon&layout=compact&langs_count=7&theme=dracula&title_color=fff&hide_border=false" alt="Most Used Languages" />
-  </div>
+ ## 📊 Linguagens mais usadas
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&layout=compact&theme=radical)
+
   
 
 </div>
