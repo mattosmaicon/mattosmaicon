@@ -9,12 +9,4 @@
   </a>
 </p>
 
----
-
-## My name is Maicon Mattos
-### Backend Developer | Java | Spring Framework
-
-## 📊 Most Used Languages
-
-![Top Langs](assets/top-langs.svg)
 
